@@ -10,6 +10,7 @@
 		09C6A30A22EF5C7200EEB642 /* CoreOcrModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C6A30022EF5C7200EEB642 /* CoreOcrModule.framework */; };
 		09C6A30F22EF5C7200EEB642 /* CoreOcrModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6A30E22EF5C7200EEB642 /* CoreOcrModuleTests.swift */; };
 		09C6A31122EF5C7200EEB642 /* CoreOcrModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6A30322EF5C7200EEB642 /* CoreOcrModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09C6A32822EF5EED00EEB642 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6A32722EF5EED00EEB642 /* Sample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		09C6A30922EF5C7200EEB642 /* CoreOcrModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreOcrModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C6A30E22EF5C7200EEB642 /* CoreOcrModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreOcrModuleTests.swift; sourceTree = "<group>"; };
 		09C6A31022EF5C7200EEB642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C6A32722EF5EED00EEB642 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				09C6A30322EF5C7200EEB642 /* CoreOcrModule.h */,
 				09C6A30422EF5C7200EEB642 /* Info.plist */,
+				09C6A32722EF5EED00EEB642 /* Sample.swift */,
 			);
 			path = CoreOcrModule;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					09C6A2FF22EF5C7200EEB642 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					09C6A30822EF5C7200EEB642 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C6A32822EF5EED00EEB642 /* Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		09C6A31522EF5C7200EEB642 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adib.CoreOcrModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		09C6A31622EF5C7200EEB642 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		09C6A31822EF5C7200EEB642 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreOcrModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		09C6A31922EF5C7200EEB642 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreOcrModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
